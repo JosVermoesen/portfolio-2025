@@ -1,0 +1,83 @@
+<!-- <ion-app>
+  <ion-router-outlet></ion-router-outlet>
+</ion-app> -->
+<ion-app>
+  <ion-menu contentId="my-content" side="start">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>
+          {{ "HOME.PageTitle" | translate }}
+        </ion-title>
+      </ion-toolbar>
+    </ion-header>
+
+    <ion-content>
+      <ion-list>
+        <ion-menu-toggle>
+          <ion-item lines="none" routerLink="/home">
+            <ion-icon name="home-outline" slot="start"></ion-icon>
+            <ion-label>{{ "MENU.HomePage" | translate }}</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+
+        <ion-menu-toggle>
+          <ion-item lines="none" routerLink="/insurers">
+            <ion-icon name="list-outline" slot="start"></ion-icon>
+            <ion-label>{{ "MENU.InsurersList" | translate }}</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+
+        <ion-menu-toggle>
+          <ion-item lines="none" routerLink="/qr">
+            <ion-icon name="scan-outline" slot="start"></ion-icon>
+            <ion-label>{{ "MENU.Qr" | translate }}</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+
+        <ion-menu-toggle>
+          <ion-item lines="none" routerLink="/device">
+            <ion-icon name="laptop-outline" slot="start"></ion-icon>
+            <ion-label>{{ "MENU.MyDevice" | translate }}</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+
+        <ion-menu-toggle>
+          <ion-item lines="none" routerLink="/about">
+            <ion-icon name="git-network-outline" slot="start"></ion-icon>
+            <ion-label>{{ "MENU.About" | translate }}</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+
+        <!-- <ion-menu-toggle>
+          <ion-item lines="none" routerLink="/map">
+            <ion-icon name="locate" slot="start"></ion-icon>
+            <ion-label>{{ 'MAP.Title' | translate }}</ion-label>
+          </ion-item>
+        </ion-menu-toggle> -->
+
+        <!-- <ion-menu-toggle *ngIf="aService.currentUser$ | async">
+          <ion-item lines="none" (click)="presentAlertConfirm()" button>
+            <ion-icon name="log-out" slot="start"></ion-icon>
+            <ion-label>{{ 'MENU.LogOut' | translate }}</ion-label>
+          </ion-item>
+        </ion-menu-toggle> -->
+
+        <!-- <ion-menu-toggle *ngIf="!androidAppInstalled">
+          <ion-item lines="none" (click)="androidInstall()" button>
+            <ion-icon name="logo-android" slot="start"></ion-icon>
+            <ion-label>{{ 'MENU.Android' | translate }}</ion-label>
+          </ion-item>
+        </ion-menu-toggle> -->
+
+        <ion-menu-toggle>
+          <ion-item lines="none" routerLink="/slides">
+            <ion-icon name="help-outline" slot="start"></ion-icon>
+            <ion-label>{{ "INTRO.Title" | translate }}</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+
+  <ion-router-outlet id="my-content"></ion-router-outlet>
+</ion-app>

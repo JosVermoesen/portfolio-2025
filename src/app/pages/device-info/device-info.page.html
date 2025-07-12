@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{ 'MENU.MyDevice' | translate }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12" size-sm="8" offset-sm="2">
+        <ion-card>
+          <ion-card-content>
+            <ion-list>
+              <ion-item>
+                <ion-label>OS Version:</ion-label>
+                <ion-badge slot="end" color="light">{{ osVersion }}</ion-badge>
+              </ion-item>
+              <ion-item>
+                <ion-label>Charging?</ion-label>
+                <ion-badge slot="end" color="light">{{ isCharging }}</ion-badge>
+              </ion-item>              
+            </ion-list>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <!-- <ion-row>
+      <ion-col col-6 *ngFor="let photo of photos">
+        <img [src]="photo.data" />
+      </ion-col>
+    </ion-row> -->
+  </ion-grid>
+
+  <!-- <ion-fab vertical="bottom" horizontal="center" slot="fixed">
+    <ion-fab-button (click)="takePicture()">
+      <ion-icon name="camera"></ion-icon>
+    </ion-fab-button>
+  </ion-fab> -->
+</ion-content>
