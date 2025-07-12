@@ -9,7 +9,9 @@ import { RouterLink } from '@angular/router';
 import { environment } from '../environments/environment';
 import { addIcons } from 'ionicons';
 import {
+  cameraOutline,
   checkmarkOutline,
+  chevronForwardOutline,
   ellipsisVerticalOutline,
   gitNetworkOutline,
   helpOutline,
@@ -38,7 +40,10 @@ export class AppComponent implements OnInit {
 
   constructor() {
     addIcons({
+      'close-outline': 'close-outline',
+      'camera-outline': cameraOutline,
       'checkmark-outline': checkmarkOutline,
+      'chevron-forward-outline': chevronForwardOutline,
       'home-outline': homeOutline,
       'list-outline': listOutline,
       'scan-outline': scanOutline,

@@ -13,12 +13,12 @@
   <!-- <input #fileinput type="file" accept="image/*;capture=camera" hidden (change)="handleFile($event.target.files)"> -->
 
   <ion-button expand="full" (click)="captureImage()">
-    <ion-icon slot="start" name="camera"></ion-icon>
+    <ion-icon slot="start" name="camera-outline"></ion-icon>
     Via Bestand
   </ion-button>
 
   <ion-button expand="full" (click)="startScan()">
-    <ion-icon slot="start" name="scan"></ion-icon>
+    <ion-icon slot="start" name="scan-outline"></ion-icon>
     Scannen
   </ion-button>
 
@@ -32,13 +32,13 @@
   <canvas #canvas hidden></canvas>
 
   <ion-button expand="full" (click)="stopScan()" color="danger" *ngIf="scanActive">
-    <ion-icon slot="start" name="close"></ion-icon>
+    <ion-icon slot="start" name="close-outline"></ion-icon>
     Scan stoppen
   </ion-button>
 
   <div *ngIf="scanResult">
     <ion-button expand="full" (click)="onClipTest(scanResult)" color="danger">
-      <ion-icon slot="start" name="close"></ion-icon>
+      <ion-icon slot="start" name="close-outline"></ion-icon>
       Kopieer naar klembord
     </ion-button>
   </div>
